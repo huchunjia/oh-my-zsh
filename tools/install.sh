@@ -27,7 +27,7 @@ main() {
   CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
   if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
     # printf "${YELLOW}Zsh is not installed!${NORMAL} Please install zsh first!\n"
-    sudo apt-get install zsh
+    sudo apt-get install -y zsh
     CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
   fi
   if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
