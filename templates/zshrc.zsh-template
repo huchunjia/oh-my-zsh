@@ -96,6 +96,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 alias blobby='aws --endpoint-url https://blob.mr3.simcloud.apple.com --cli-read-timeout 300'
 
-export PATH=/usr/local/cuda-8.0/bin:$PATH
+export PATH=/root/tools/anaconda/bin:/usr/local/cuda-8.0/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64$:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
